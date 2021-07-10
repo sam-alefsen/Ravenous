@@ -46,7 +46,7 @@ export default class SearchBar extends React.Component {
   renderSortByOptions(object, arr) {
     let listItems = arr.map(key => {
       let value = object[key];
-      return <li key={key} className={this.getSortByClass(value)} onClick={this.handleSortByChange.bind(this, value)}>{value}</li>;
+      return <li key={key} className={this.getSortByClass(value)} onClick={this.handleSortByChange.bind(this, value)}>{key}</li>;
     })
     return listItems;
   }
